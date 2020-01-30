@@ -21,7 +21,8 @@ h1 {
 h2 {
 	font-family: 'Merienda One', cursive;
     font-size: 34px;
-    text-align: center;
+    text-align: center;  
+    text-decoration: underline;
 }
 
 .mute {
