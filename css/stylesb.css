@@ -1,0 +1,105 @@
+body {
+	background-image: url("../images/background1.jpg");
+	background-color: #780000;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+    margin: auto;
+    color: white;
+}
+
+html { 
+    background-color: unset; 
+}
+
+h1 {
+	font-size: 60px;
+	font-family: 'Satisfy', cursive;
+	padding-left: 3rem;
+}
+
+h2 {
+	font-family: 'Merienda One', cursive;
+    font-size: 34px;
+    text-align: center;
+}
+
+.mute {
+	font-family: 'Londrina Solid', cursive;
+}
+
+p {
+	font-family: 'Londrina Solid', cursive;
+    font-size: 22px;
+}
+
+h1, h2, p {
+	background: -webkit-linear-gradient(#ffffff, #ffd1d1);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow: 0px 0px 3px rgba(254, 255, 207, 0.5);
+}
+
+.hero-body {
+    position: relative;
+    padding-top: 1rem;
+}
+
+.is-child {    
+	box-shadow: 0px 0px 3px #feffcf;
+}
+
+.with-padding {
+    padding: 1rem;
+}
+
+.card {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.card img {
+    border-radius: 4px;
+}
+
+.is-child {
+    background-color: rgba(153, 28, 28, 0.75);
+}
+
+.card button {
+    width: 100%;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-content {
+    height: 100%;
+}
+
+.navbar-end {
+    background-color: rgba(190, 45, 45, 0.8);
+}
+
+.navbar-burger {
+    color: white;
+    background-color: rgba(190, 45, 45, 0.8);
+}
+
+.navbar-burger:hover {
+    color: white;
+    background-color: rgba(190, 45, 45, 0.8);
+
+}
+
+@media screen and (max-width: 1023px) {
+    .navbar-menu {
+        background-color: rgba(190, 45, 45, 0.8);
+    }
+
+    .navbar-end {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
