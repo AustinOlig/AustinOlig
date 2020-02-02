@@ -1,0 +1,32 @@
+body {
+    background-color: #2d384a;
+}
+
+.sosic {
+    font-family: 'Faster One', cursive;
+}
+
+.title {
+    font-family: 'Bahiana', cursive;
+}
+
+.shadow-tile {
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.65);
+}
+
+.shadow-video {
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.65);
+}
+
+.shadow-video2 {
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.65);
+}
+
+.para {
+    font-family: 'Nova Round', cursive;
+}
+
+.bg-tile {
+    background-color:  rgba(236, 236, 236, 0.95);
+    background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgba(212, 212, 212, 0.95) 100%);
+}
