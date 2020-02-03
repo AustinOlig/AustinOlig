@@ -23,6 +23,8 @@
                   - use 3rd card as main style
                   - play/pause vids
                   - create posters for vids
+                  - combine shadow-tile with bg-tile
+                  - fix iOS formatting
     -->
   </head>
   <body class="h-screen">
@@ -38,12 +40,12 @@
         </section>
         <section class="para">
           <div class="sm:flex flex-row bg-tile shadow-tile rounded-lg m-2">
-            <figure class="sm:w-1/2 p-2 shadow-video rounded-t-lg sm:rounded-l-lg sm:rounded-t-none">
-              <video class="rounded-lg shadow-video2" preload="auto" controls loop muted playsinline poster="images/thumb_g7_2x_purple.png">
+            <figure class="sm:w-1/2 p-2">
+              <video class="rounded-lg shadow-video2" controls loop muted playsinline poster="images/thumb_g7_2x_purple.png">
                 <source src="videos/g7_2x_purple.mp4" type="video/mp4" />
               </video>
             </figure>
-            <figure class="sm:w-1/2 pl-2 pr-2 pt-2 sm:pt-0">
+            <figure class="bg-tile rounded-b-lg sm:rounded-l-none sm:rounded-r-lg sm:w-1/2 pl-2 pr-2 pt-2 sm:pt-0">
               <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center font-bold">LongSwitch2x</div>
               <div class="text-md sm:text-lg md:text-xl lg:text-2xl md:mt-1 lg:mt-2 xl:mt-4">DESCRIPTION</div>
               <div class="text-sm sm:text-md md:text-lg lg:text-xl">Shoot all dummies from a far distance with a 2x scope. Attempt to hit two shots before switching targets.</div>
@@ -60,15 +62,12 @@
             </figure>
           </div>
           <div class="sm:flex flex-row bg-tile shadow-tile rounded-lg m-2">
-            <div class="sm:w-1/2 p-2 ">
-              <video class="rounded-vid shadow-video2" src="videos/wing_1x_purple.mp4" type="video/mp4" autoplay="false" controls loop muted>
-                <!-- <video class="rounded-lg shadow-video2" loop muted> -->
-                 
-                <!-- </video> -->
-              </video>
-            </div>
-
-            <figure class="sm:w-1/2 pl-2 pr-2 pt-2 sm:pt-0">
+            <figure class="sm:w-1/2 p-2">
+              <video class="rounded-lg shadow-video2" controls loop muted playsinline poster="">
+                  <source src="videos/wing_1x_purple.mp4" type="video/mp4" />
+                </video>
+            </figure>
+            <figure class="bg-tile rounded-b-lg sm:rounded-l-none sm:rounded-r-lg sm:w-1/2 pl-2 pr-2 pt-2 sm:pt-0">
               <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center font-bold">CloseSwitch</div>
               <div class="text-md sm:text-lg md:text-xl lg:text-2xl md:mt-1 lg:mt-2 xl:mt-4">DESCRIPTION</div>
               <div class="text-sm sm:text-md md:text-lg lg:text-xl">Shoot all dummies from a close distance with a 1x scope or iron sight. Shoot once before switching targets.</div>
@@ -85,12 +84,12 @@
             </figure>            
           </div>
           <div class="sm:flex flex-row bg-tile shadow-tile rounded-lg m-2">
-            <figure class="sm:w-1/2 p-2 shadow-video rounded-t-lg sm:rounded-l-lg sm:rounded-t-none">
-              <video class="rounded-lg shadow-video2" preload="metadata" autoplay="false" loop muted>
+            <figure class="sm:w-1/2 p-2">
+              <video class="rounded-lg shadow-video2" controls loop muted playsinline poster="">
                 <source src="videos/spit_1x_purple.mp4" type="video/mp4" />
               </video>
             </figure>
-            <figure class="bg-tile rounded-b-lg sm:rounded-r-lg sm:rounded-l-none sm:w-1/2 pl-2 pr-2 pt-2 sm:pt-0">
+            <figure class="bg-tile rounded-b-lg sm:rounded-l-none sm:rounded-r-lg sm:w-1/2 pl-2 pr-2 pt-2 sm:pt-0">
               <div class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-center font-bold">VarSwitch</div>
               <div class="text-md sm:text-lg md:text-xl lg:text-2xl md:mt-1 lg:mt-2 xl:mt-4">DESCRIPTION</div>
               <div class="text-sm sm:text-md md:text-lg lg:text-xl">Shoot all dummies from varying distances with a 1x scope or iron sight. Must kill dummy before switching targets.</div>
