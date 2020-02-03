@@ -20,11 +20,8 @@
     Date Created:	02/01/2020f
     Description:	soSic's Apex Aim Routine w/ tailwindcss Framework!!
     Notes:        - use weapon loadout hud in description
-                  - use 3rd card as main style
-                  - play/pause vids
-                  - create posters for vids
                   - combine shadow-tile with bg-tile
-                  - fix iOS formatting
+                  - fix iOS formatting (not bad so far)
     -->
   </head>
   <body class="h-screen">
@@ -63,7 +60,7 @@
           </div>
           <div class="sm:flex flex-row bg-tile shadow-tile rounded-lg m-2">
             <figure class="sm:w-1/2 p-2">
-              <video class="rounded-lg shadow-video2" controls loop muted playsinline poster="">
+              <video class="rounded-lg shadow-video2" preload="none" controls loop muted playsinline poster="images/thumb_wing_1x_purple.png">
                   <source src="videos/wing_1x_purple.mp4" type="video/mp4" />
                 </video>
             </figure>
@@ -85,7 +82,7 @@
           </div>
           <div class="sm:flex flex-row bg-tile shadow-tile rounded-lg m-2">
             <figure class="sm:w-1/2 p-2">
-              <video class="rounded-lg shadow-video2" controls loop muted playsinline poster="">
+              <video class="rounded-lg shadow-video2" preload="none" controls loop muted playsinline poster="images/thumb_spit_1x_purple.png">
                 <source src="videos/spit_1x_purple.mp4" type="video/mp4" />
               </video>
             </figure>
