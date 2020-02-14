@@ -1,7 +1,9 @@
+// Initial content set
 window.onload = function(){
     document.getElementById('main-content').style.display = "initial";
 }
 
+// Changes tabs (TO BE OPTIMIZED)
 function openTab(evt, tabContentName) {
     var i, tabContents, tabs, hero;
     tabContents = document.getElementsByClassName("tab-content");
@@ -28,3 +30,11 @@ function openTab(evt, tabContentName) {
         hero.className = hero.className.replace("is-warning", "is-info");
     } 
 }
+
+// Set navbar-burger to active when clicked
+$(document).ready(function() {
+    $(".navbar-burger").click(function() {
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");
+    });
+});
