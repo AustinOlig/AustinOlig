@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="AJZ">
+    <meta property="og:description" content="This is my our final group project.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="./index.html">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./styles/helpers.css"/>
+    <link rel="stylesheet" href="./styles/text-animation.css"/>
+    <link rel="icon" href="./images/fas fa-clone.png">
+    <link rel="apple-touch-icon" href="">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/website.js"></script>
+    <title>AJZ</title>
+    <!--
+    Author:	      Austin Oligario, Jude Antony, Zehan Song
+    Filename:	    index.html
+    Date Created:	02/13/2020
+    Description:	Final project for CSCI 3230U: Web Application Development.
+    Notes:        - Website topic unclear at the moment.
+                  - Need to create thumbnail for meta property 'og:image'
+                  - Need to create thumbnail for 'apple touch icon'
+                  - Need to create real website logo. Currently using font-awesome icons as placeholder.
+    -->
+  </head>
+  <body class="has-navbar-fixed-bottom">
+    <div class="navbar is-light is-fixed-bottom">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-item"><i class="far fa-clone"></i></span>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#">Home</a>
+            <div class="navbar-item has-dropdown has-dropdown-up is-hoverable">
+              <a class="navbar-link" href='#'>About Us</a>
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#">Austin Oligario</a>
+                <a class="navbar-item" href="#">Zehan Song</a>
+                <a class="navbar-item" href="#">Jude Antony</a>
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="https://ontariotechu.ca/">OnTechU</a>
+              </div>
+            </div>
+            <a class="navbar-item" href="#">Contact</a>
+          </div>
+          <div class="navbar-end">
+            <span class="navbar-item">
+              <p>Austin Oligario, Jude Antony, Zehan Song. &copy; 2020</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="hero" class="hero is-fullheight is-bold is-info">
+      <div class="hero-head">
+        <nav class="tabs is-centered is-boxed is-boxed-up is-fullwidth">
+          <div class="container">
+            <ul>
+              <li id="main-tab" class="tab is-active" onclick="openTab(event, 'main-content')"><a>Main Content</a></li>
+              <li id="tab-one" class="tab" onclick="openTab(event, 'content-one')"><a>Content One</a></li>
+              <li id="tab-two" class="tab" onclick="openTab(event, 'content-two')"><a>Content Two</a></li>
+              <li id="tab-three" class="tab" onclick="openTab(event, 'content-three')"><a>Content Three</a></li>
+              <li id="tab-four" class="tab" onclick="openTab(event, 'content-four')"><a>Content Four</a></li>
+              <li id="tab-five" class="tab" onclick="openTab(event, 'content-five')"><a>Content Five</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="hero-body">
+          <div class="container has-text-centered"> 
+            <div id="main-content" class="tab-content">
+              <h1 class="title animate-text">Final Project</h1>
+              <h2 class="subtitle animate-text">CSCI 3230U: Web Application Development</h2>
+            </div>
+            <div id="content-one" class="tab-content">
+              <h1 class="title animate-text">Content One</h1>
+              <h2 class="subtitle animate-text">This is content one.</h2>
+            </div>
+            <div id="content-two" class="tab-content"> 
+              <h1 class="title animate-text">Content Two</h1>
+              <h2 class="subtitle animate-text">This is content two.</h2>
+            </div>
+            <div id="content-three" class="tab-content">
+              <h1 class="title animate-text">Content three</h1>
+              <h2 class="subtitle animate-text">This is content three.</h2>
+            </div>
+            <div id="content-four" class="tab-content">
+              <h1 class="title animate-text">Content Four</h1>
+              <h2 class="subtitle animate-text">This is content four.</h2>
+            </div>
+            <div id="content-five" class="tab-content">
+              <h1 class="title animate-text">Content Five</h1>
+              <h2 class="subtitle animate-text">This is content five.</h2>
+            </div>
+        </div>
+      </div>
+
+      <div class="hero-foot">
+        <div class="container"> 
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

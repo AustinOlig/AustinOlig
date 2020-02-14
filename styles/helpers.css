@@ -1,0 +1,7 @@
+.is-boxed-up a {
+    border-radius: 0 0 4px 4px !important;
+}
+
+.tab-content {
+    display: none;
+}

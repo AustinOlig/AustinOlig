@@ -1,0 +1,76 @@
+/* This css class will css animations for a simple text effect, with all browser compatibility */
+.animate-text {
+    opacity: 0;
+    -webkit-animation: fade-shift 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+       -moz-animation: fade-shift 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+         -o-animation: fade-shift 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+            animation: fade-shift 1s cubic-bezier(0, 1, 0.5, 1) 1 normal forwards;
+}
+
+@-webkit-keyframes fade-shift {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+           -moz-transform: translateY(100%);
+             -o-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@-moz-keyframes fade-shift {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+           -moz-transform: translateY(100%);
+             -o-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@-o-keyframes fade-shift {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+           -moz-transform: translateY(100%);
+             -o-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes fade-shift {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+           -moz-transform: translateY(100%);
+             -o-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
