@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Converter!</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script defer src="js/converter.js"></script>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">Sensitivity Converter</h1>
+                <p class="subtitle">by soSic</p>
+                
+                <div class="notification is-warning">
+                    <!-- <button class="delete"></button> -->
+                    <p><strong><i>Mar 4th, 2020</i></strong> - Currently only converts from 'CSGO' or 'Apex Legends' sensitivities.</p>
+                  </div>
+
+                <div class="columns">
+                    <div class="column is-one-fifth">
+                        <label class="label">GAME</label>
+                        <div class="control">
+                            <div class="select">
+                                <select id="game-options">
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-fifth">
+                        <div>
+                            <div class="field">
+                                <label class="label">SENSITIVITY</label>
+                                <div class="control">
+                                    <input id="sens-input" class="input" type="text" placeholder="0.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-fifth">
+                        <div>
+                            <div class="field">
+                                <label class="label">Decimal Precision</label>
+                                <div class="control">
+                                    <input id="decimal-precision" class="input" type="number" value=4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="container">
+                <div>
+                    <table id="sens-output" class="table">
+                        <thead>
+                            <tr id="table-headers">
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="table-cells">
+                            </tr>
+                        </tbody>
+                   <!-- <tfoot>
+                            <tr>
+                                <th>Footer</th>
+                            </tr>
+                        </tfoot> -->
+                    </table>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
