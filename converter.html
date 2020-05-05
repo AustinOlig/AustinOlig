@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Converter!</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+        <link rel="icon" type="image/png" href="images/icon_sosic.png">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script defer src="js/converter.js"></script>
@@ -12,16 +13,25 @@
     <body>
         <section class="section">
             <div class="container">
-                <h1 class="title">Sensitivity Converter</h1>
-                <p class="subtitle">by soSic</p>
+                <div class="columns">
+                    <div class="column is-narrow">
+                        <figure class="image is-128x128">
+                            <img class="is-rounded" src="images/icon_sosic_bg.jpg">
+                          </figure>
+                    </div>
+                    <div class="column">
+                        <h1 class="title">Sensitivity Converter</h1>
+                        <p class="subtitle">by soSic</p>
+
+                    </div>
+                </div>
                 
                 <div class="notification is-warning">
-                    <!-- <button class="delete"></button> -->
                     <p><strong><i>Mar 4th, 2020</i></strong> - Currently only converts from 'CSGO' or 'Apex Legends' sensitivities.</p>
-                  </div>
+                </div>
 
                 <div class="columns">
-                    <div class="column is-one-fifth">
+                    <div class="column is-narrow">
                         <label class="label">GAME</label>
                         <div class="control">
                             <div class="select">
@@ -30,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-one-fifth">
+                    <div class="column is-narrow">
                         <div>
                             <div class="field">
                                 <label class="label">SENSITIVITY</label>
@@ -40,10 +50,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column is-one-fifth">
+                    <div class="column is-narrow">
                         <div>
                             <div class="field">
-                                <label class="label">Decimal Precision</label>
+                                <label class="label">DECIMAL PRECISION</label>
                                 <div class="control">
                                     <input id="decimal-precision" class="input" type="number" value=4>
                                 </div>
