@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sensitivity Converter</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+		<link rel="stylesheet" href="css/helpers.css"/>
         <link rel="icon" type="image/png" href="images/icon_sosic.png">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -22,7 +23,6 @@
                     <div class="column is-narrow">
                         <h1 class="title">Sensitivity Converter</h1>
                         <p class="subtitle">by soSic</p>
-
                     </div>
                 </div>
                 
@@ -30,12 +30,12 @@
                     <p><strong><i>Mar 4th, 2020</i></strong> - Currently only converts from 'CSGO' or 'Apex Legends' sensitivities.</p>
                 </div> -->
 
-                <div class="columns is-centered">
+                <div class="columns is-centered has-text-centered">
                     <div class="column is-narrow">
                         <label class="label">GAME</label>
-                        <div class="control">
+                        <div class="control center">
                             <div class="select">
-                                <select id="game-options">
+                                <select id="game-options" class="resize">
                                 </select>
                             </div>
                         </div>
@@ -44,8 +44,8 @@
                         <div>
                             <div class="field">
                                 <label class="label">SENSITIVITY</label>
-                                <div class="control">
-                                    <input id="sens-input" class="input" type="number" step=".1" placeholder="0.00">
+                                <div class="control center">
+                                    <input id="sens-input" size="1" class="input resize" type="number" step=".1" placeholder="0.00">
                                 </div>
                             </div>
                         </div>
@@ -54,8 +54,8 @@
                         <div>
                             <div class="field">
                                 <label class="label">DECIMAL PRECISION</label>
-                                <div class="control">
-                                    <input id="decimal-precision" class="input" type="number" value=4>
+                                <div class="control center">
+                                    <input id="decimal-precision" class="input resize" type="number" value=4>
                                 </div>
                             </div>
                         </div>

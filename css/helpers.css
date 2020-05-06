@@ -1,0 +1,14 @@
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resize {
+    width: 14em;
+}
+
+th, td {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
