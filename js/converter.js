@@ -16,7 +16,8 @@ $(window).on('load', () => {
         $("#game-options").append(option);
 
         // populate table headers
-        $("#table-headers").append(`<th>${games[i][1]}</th>`);
+        var header = $(`<th>${games[i][1]}</th>`);
+        $("#table-headers").append(header);
 
         // populate table results
         var result = $(`<td>0.0000</td>`).attr('id', `result-${games[i][0]}`);
