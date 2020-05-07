@@ -63,7 +63,7 @@ function calcSens() {
     } else if (selected_game == 'valorant') {
         sens_source = parseFloat(sens_input * 22 / 7);
     } else if (selected_game == 'modern-warfare') {
-        sens_source = parseFloat(sens_input * 3);
+        sens_source = parseFloat(sens_input / 10 * 3);
     } else if (selected_game == 'overwatch') {
         sens_source = parseFloat(sens_input / 10 * 3);
     }
@@ -81,7 +81,7 @@ function calcSens() {
     $("#result-valorant").text(sens_valorant.toFixed(decimal_precision));
 
     // convert to modernwarfare
-    var sens_modern_warfare = parseFloat(sens_source * (1/3));
+    var sens_modern_warfare = parseFloat(sens_source * (1/3) * 10);
     $("#result-modern-warfare").text(sens_modern_warfare.toFixed(decimal_precision));
 
     // convert to overwatch
