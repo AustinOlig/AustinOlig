@@ -61,7 +61,7 @@ function calcSens() {
     } else if (selected_game == 'apex-legends') {
         sens_source = parseFloat(sens_input);
     } else if (selected_game == 'valorant') {
-        sens_source = parseFloat(sens_input * 22 / 7);
+        sens_source = parseFloat(sens_input * 7 / 22);
     } else if (selected_game == 'modern-warfare') {
         sens_source = parseFloat(sens_input / 10 * 3);
     } else if (selected_game == 'overwatch') {
@@ -77,7 +77,7 @@ function calcSens() {
     $("#result-apex-legends").text(sens_apex_legends.toFixed(decimal_precision));
     
     // convert to valorant
-    var sens_valorant = parseFloat(sens_source * 7 / 22);
+    var sens_valorant = parseFloat(sens_source * 22 / 7);
     $("#result-valorant").text(sens_valorant.toFixed(decimal_precision));
 
     // convert to modernwarfare
