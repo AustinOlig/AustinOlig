@@ -5,6 +5,7 @@ var games = [
     ['valorant', 'VALORANT'], 
     ['modern-warfare', 'MODERN WARFARE'], 
     ['overwatch', 'OVERWATCH'],
+    ['siege', 'R6 SIEGE'],
 ];
 
 // initialize window
@@ -66,6 +67,8 @@ function calcSens() {
         sens_source = parseFloat(sens_input / 10 * 3);
     } else if (selected_game == 'overwatch') {
         sens_source = parseFloat(sens_input / 10 * 3);
+    } else if (selected_game == 'siege') {
+        sens_source = parseFloat(sens_input / 3.83972336439);
     }
 
     // convert to csgo
@@ -87,4 +90,8 @@ function calcSens() {
     // convert to overwatch
     var sens_overwatch = parseFloat(sens_source * (1/3) * 10);
     $("#result-overwatch").text(sens_overwatch.toFixed(decimal_precision));
+
+    // convert to siege
+    var sens_siege = parseFloat(sens_source * 3.83972336439);
+    $("#result-siege").text(sens_siege.toFixed(decimal_precision));
 }
