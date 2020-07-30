@@ -137,6 +137,6 @@ function calcSens() {
 
     // convert to hyper scape
     var sens_hyper_scape = parseFloat(sens_source * 3.83972336439);
-    $("#result-siege").text((sens_hyper_scape / dpi_input).toFixed(decimal_precision));
-    $("#result-siege-custom").text((sens_hyper_scape / dpi_output).toFixed(decimal_precision));
+    $("#result-hyper-scape").text((sens_hyper_scape / dpi_input).toFixed(decimal_precision));
+    $("#result-hyper-scape-custom").text((sens_hyper_scape / dpi_output).toFixed(decimal_precision));
 }
