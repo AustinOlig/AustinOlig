@@ -26,10 +26,33 @@
                     </div>
                 </div>
                 
-                <!-- <div class="notification is-warning">
-                    <p><strong><i>May 28th, 2020</i></strong> - Added support for converting 'R6 Siege' sensitivities.</p>
-                </div> -->
-
+                <div class="notification is-warning">
+                    <div class="flex-notification">
+                        <div class="notification-date">
+                            <p>
+                                <strong><i>July 30th, 2020</i></strong>
+                            </p>
+                        </div>
+                        <div class="notification-text">
+                            - Added the option to convert sensitivities to other DPI values.
+                            <br>
+                            - Added support to convert from/to Hyper Scape sensitivites.
+                        </div>
+                    </div>
+                    <!-- <br>
+                    <div class="flex-notification">
+                        <div class="notification-date">
+                            <p>
+                                <strong><i>July 30th, 2020</i></strong>
+                            </p>
+                        </div>
+                        <div class="notification-text">
+                            - Added option to convert sensitivities to other DPI values.
+                            <br>
+                            - Added support to convert from/to Hyper Scape sensitivites.
+                        </div>
+                    </div> -->
+                </div>
                 <div class="columns is-centered has-text-centered">
                     <div class="column is-narrow">
                         <label class="label">GAME</label>
@@ -45,7 +68,29 @@
                             <div class="field">
                                 <label class="label">SENSITIVITY</label>
                                 <div class="control center">
-                                    <input id="sens-input" size="1" class="input resize" type="number" step=".1" placeholder="0.00">
+                                    <input id="sens-input" class="input resize" type="number" step=".1" placeholder="0.00" min="0.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-narrow">
+                        <div>
+                            <div class="field">
+                                <label class="label">DPI INPUT</label>
+                                <div class="control center">
+                                    <input id="dpi-input" class="input resize" type="number" step="50" value="800" min="0">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-narrow">
+                        <div>
+                            <div class="field">
+                                <label class="label">DPI OUTPUT</label>
+                                <div class="control center">
+                                    <input id="dpi-output" class="input resize" type="number" step="50" placeholder="Optional" min="0">
                                 </div>
                             </div>
                         </div>
@@ -55,32 +100,29 @@
                             <div class="field">
                                 <label class="label">DECIMAL PRECISION</label>
                                 <div class="control center">
-                                    <input id="decimal-precision" class="input resize" type="number" value=4>
+                                    <input id="decimal-precision" class="input resize" type="number" value="4" min="0">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr />
+            <hr>
             <div class="container">
                 <div class="columns is-centered">
                     <div class="column is-narrow">
                         <div class="table-container">
-                            <table id="sens-output" class="table">
+                            <table id="sens-output" class="table is-hoverable">
                                 <thead>
-                                    <tr id="table-headers">
-                                    </tr>
+                                    <tr id="table-headers"></tr>
                                 </thead>
                                 <tbody>
-                                    <tr id="table-cells">
-                                    </tr>
+                                    <tr id="table-cells"></tr>
                                 </tbody>
-                                <!-- <tfoot>
-                                    <tr>
-                                        <th>Footer</th>
-                                    </tr>
-                                </tfoot> -->
+                                <tfoot>
+                                    <tr id="table-cells-custom-header"></tr>
+                                    <tr id="table-cells-custom"></tr>
+                                </tfoot>
                             </table>
                         </div>
                     </div>
